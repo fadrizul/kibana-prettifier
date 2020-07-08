@@ -5,7 +5,7 @@ chrome.runtime.onInstalled.addListener(() => {
     chrome.declarativeContent.onPageChanged.addRules([{
         conditions: [new chrome.declarativeContent.PageStateMatcher({
             pageUrl: {
-                urlContains: 'es.amazonaws.com/_plugin/kibana/app/kibana'
+                urlContains: '/app/kibana'
             }
         })],
         actions: [new chrome.declarativeContent.ShowPageAction()]
